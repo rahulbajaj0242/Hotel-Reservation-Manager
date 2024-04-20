@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #1a202c;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.MenuController">
+   <children>
+      <Label fx:id="title" alignment="CENTER" layoutX="171.0" layoutY="24.0" text="Hotel Reservation System" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="bookRoomLabel" layoutX="81.0" layoutY="177.0" onMouseClicked="#bookRoomLabelClick" prefHeight="22.0" prefWidth="103.0" text=" Book a room" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="410.0" layoutY="177.0" onMouseClicked="#billServiceLabelClick" prefHeight="22.0" prefWidth="91.0" text="Create a Bill" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="301.0" onMouseClicked="#currBookingLabelClick" prefHeight="22.0" prefWidth="130.0" text="Current bookings" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="400.0" layoutY="301.0" onMouseClicked="#availRoomLabelClick" prefHeight="22.0" prefWidth="116.0" text="Available rooms" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="39.0" fitWidth="58.0" layoutX="113.0" layoutY="131.0" onMouseClicked="#bookRoomLabelClick" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/home-2-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="39.0" fitWidth="58.0" layoutX="436.0" layoutY="131.0" onMouseClicked="#billServiceLabelClick" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/bill-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="39.0" fitWidth="58.0" layoutX="115.0" layoutY="256.0" onMouseClicked="#currBookingLabelClick" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/icons8-booking-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="39.0" fitWidth="58.0" layoutX="438.0" layoutY="256.0" onMouseClicked="#availRoomLabelClick" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/icons8-living-room-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="22.0" fitWidth="32.0" layoutX="564.0" layoutY="13.0" onMouseClicked="#exitLabelClick" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/icons8-exit-50.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
